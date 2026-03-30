@@ -1,0 +1,219 @@
+*{
+    margin: 0px;
+}
+
+.color{
+    background-image: linear-gradient(to right top, #098a29, #509832, #7aa53f, #9eb351, #bfc066, #bfc066, #bfc066, #bfc066, #9eb351, #7aa53f, #509832, #098a29);
+}
+
+.color button{
+
+    
+    border: None;
+    width: 75px;
+    height: 30px;
+    border-radius: 25px;
+    
+    
+}
+
+button:hover{
+    width: 80px;
+    height: 35px;
+    border-radius: 25px;
+    background-color: white;
+}
+
+.note{
+background-image: linear-gradient(to right top, #bcccc7, #c7d6d2, #d2e1dd, #ddebe9, #e9f6f4);
+}
+
+a{
+    text-decoration: none;
+}
+
+.Login{
+    text-align: center;
+    background-image: linear-gradient(to right top, #58e366, #78e46c, #91e574, #a6e57d, #b7e688, #ace795, #a2e7a2, #9be6ae, #79e2c2, #5ddcd6, #51d4e6, #5dcaef);;
+    width: auto;
+    height: 150px;
+}
+
+#heading{
+    padding-top: 30px;
+    text-decoration: solid;
+}
+#home{
+    padding-top: 30px;
+}
+
+.login_box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(to right top, #58e366, #78e46c, #91e574, #a6e57d, #b7e688, #ace795, #a2e7a2, #9be6ae, #79e2c2, #5ddcd6, #51d4e6, #5dcaef);;
+}
+
+.Admin{
+    width: 500px;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to right top, #25c3d1, #22c9d3, #21d0d5, #23d6d7, #27dcd8);
+    border-top-left-radius: 170px;
+    border-bottom-left-radius: 170px;
+    border-top-right-radius: 170px;
+    border-bottom-right-radius: 170px;
+    border: none;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.Admin h3{
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 8px;
+}
+
+.Admin p{
+    text-align: center;
+    padding-top: 7px;
+}
+
+#about_admin{
+    background-image: linear-gradient(to right top, #bcccc7, #c7d6d2, #d2e1dd, #ddebe9, #e9f6f4);
+    width: 750px;
+    height: 200px;
+    padding-left: 40px;
+    padding-top: 29px;
+    /*margin-left: 100px;
+    /*border-radius: 25%;*/
+    border-top-left-radius: 170px;
+    border-bottom-left-radius: 170px;
+    border-top-right-radius: 170px;
+    border-bottom-right-radius: 170px;
+    text-decoration: solid;
+}
+
+#video{
+    width: 100%;
+    height: 400px;
+    background-color: aliceblue;
+}
+
+footer{
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient(to right top, #e2d966, #e1d571, #e0d27c, #ddce87, #dacb91);
+}
+
+
+/*****************************Login Input Page************************/
+.input0{
+    /*background-color: rgb(160, 168, 220);
+    background-image: linear-gradient(to right top, #098a29, #509832, #7aa53f, #9eb351, #bfc066, #bfc066, #bfc066, #bfc066, #9eb351, #7aa53f, #509832, #098a29);;;;;
+    */
+    margin: 0%;
+    background-image: url(login\ background.jpg);
+    background-size: 1530px auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+
+.input1{
+    width: 450px;
+    height: 550px;
+    margin-left: 35%;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    border-color: rgb(100, 13, 171);
+    border-bottom-left-radius: 70px;
+    border-top-right-radius: 70px;
+}
+
+.input2{
+    display: flex;
+    align-items:flex-start;
+    
+    background-color: white;
+    width: 740px;
+    height: 480px;
+    margin: 25px;
+    border-bottom-left-radius: 38px;
+    border-top-right-radius: 38px;
+}
+
+#child_01{
+    height: 480px;
+    width:370px;
+    /*margin-top: 15px;
+    margin-left: 15px;*/
+}
+
+#child_02{
+    height: 480px;
+    width:390px;
+    background-image: linear-gradient(to right top, #66cbe2, #69c1df, #6eb8db, #75aed5, #7ba4cd);;
+    border-top-right-radius: 38px;
+    display: flex;
+    align-items:center;
+    
+}
+    
+.side{
+    
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+
+
+.input2 h1{
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.input2 label{
+    margin-left: 25px;
+
+}
+
+.input2 p{
+    text-align: center;
+}
+
+#enter{
+    width: 300px;
+    height: 20px;
+    border-style: solid;
+    margin-left: 25px;
+}
+
+.radio{
+    display: flex;
+    align-items: center;
+}
+
+#check{
+    margin-top: 5px;
+    margin-right: 4px;
+    margin-left: 25px;
+}
+
+#a{
+    margin-left: 214px;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+
+.button button{
+    height: 30px;
+    width: 100px;
+    border: none;
+}
+
