@@ -1,0 +1,28 @@
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f4f6f9;
+}
+
+h2 {
+  margin-bottom: 15px;
+}
+
+input, select, textarea, button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+button {
+  background: #1f6aa5;
+  color: white;
+  border: none;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  margin-top: 10px;
+}

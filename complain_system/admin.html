@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admin - Manage Complaints</title>
+<link rel="stylesheet" href="complaint.css">
+</head>
+<body>
+
+<h2>All Complaints</h2>
+
+<div id="complaintsList"></div>
+
+<script>
+let complaints = JSON.parse(localStorage.getItem("complaints")) || [];
+
+function render(){
+  let html = "";
+
+  complaints.forEach((c, index) => {
+    html += `
+    <div class="card">
+      <p><b>ID:</b> ${c.id}</p>
+      <p><b>Name:</b> ${c.name}</p>
+      <p><b>Issue:</b> ${c.issue}</p>
+
+      <select onchange="updateStatus(${index}, this.value)">
+        <option ${c.status==="Pending"?"selected":""}>Pending</option>
+        <option ${c.status==="In Progress"?"selected":""}>In Progress</option>
+        <option ${c.status==="Resolved"?"selected":""}>Resolved</option>
+      </select>
+    </div>
+    `;
+  });
+
+  document.getElementById("complaintsList").innerHTML = html;
+}
+
+function updateStatus(index, value){
+  complaints[index].status = value;
+  localStorage.setItem("complaints", JSON.stringify(complaints));
+}
+
+render();
+</script>
+
+</body>
+</html>

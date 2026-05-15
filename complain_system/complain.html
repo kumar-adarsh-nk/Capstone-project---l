@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Register Complaint</title>
+<link rel="stylesheet" href="complain.css">
+</head>
+<body>
+
+<h2>Register Complaint</h2>
+
+<form id="complaintForm">
+  <input type="text" id="name" placeholder="Your Name" required>
+  <input type="email" id="email" placeholder="Email" required>
+
+  <select id="issue" required>
+    <option value="">Select Issue</option>
+    <option>Ration Not Received</option>
+    <option>Wrong Quantity</option>
+    <option>Technical Issue</option>
+  </select>
+
+  <textarea id="message" placeholder="Describe issue" required></textarea>
+
+  <button type="submit">Submit Complaint</button>
+</form>
+
+<script src="complaint.js"></script>
+
+<script>
+    document.getElementById("complaintForm").addEventListener("submit", function(e){
+  e.preventDefault();
+
+  let complaints = JSON.parse(localStorage.getItem("complaints")) || [];
+
+  let id = "CMP" + Date.now(); // unique ID
+
+  let newComplaint = {
+    id: id,
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    issue: document.getElementById("issue").value,
+    message: document.getElementById("message").value,
+    status: "Pending"
+  };
+
+  complaints.push(newComplaint);
+  localStorage.setItem("complaints", JSON.stringify(complaints));
+
+  alert("Complaint Registered!\nYour ID: " + id);
+
+  this.reset();
+});
+</script>
+</body>
+</html>
